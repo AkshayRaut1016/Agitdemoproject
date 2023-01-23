@@ -17,6 +17,12 @@ public class DashboardTest extends BaseClass{
 		
 	}
 	
+	@Test(priority=5)
+	public void validateTitle()
+	{
+		dp.gettitle();
+	}
+	
 	
 	
 	

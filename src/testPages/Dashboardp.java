@@ -29,7 +29,11 @@ public class Dashboardp {
 	 public void navtoedit()
 	 {
 		 edit.click();
-		String title= driver.getTitle();
+		
+	 }
+	 public void gettitle()
+	 {
+		 String title= driver.getTitle();
 		 System.out.println(title);
 	 }
 }
