@@ -5,12 +5,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 
+import testPages.Dashboardp;
 import testPages.Login;
 
 public class BaseClass {
 	static WebDriver driver;
 	Login lp;
-	 
+	 Dashboardp dp;
 	
 	
 	
@@ -28,6 +29,7 @@ public class BaseClass {
 	public void objects()
 	{
 		 lp = new Login(driver);
+		 dp= new Dashboardp(driver);
 		 
 	}
 	
