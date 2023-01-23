@@ -7,11 +7,13 @@ import org.testng.annotations.BeforeSuite;
 
 import testPages.Dashboardp;
 import testPages.Login;
+import testPages.Logoutp;
 
 public class BaseClass {
 	static WebDriver driver;
 	Login lp;
 	 Dashboardp dp;
+	 Logoutp l;
 	
 	
 	
@@ -30,6 +32,7 @@ public class BaseClass {
 	{
 		 lp = new Login(driver);
 		 dp= new Dashboardp(driver);
+		 l= new Logoutp(driver);
 		 
 	}
 	
